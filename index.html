@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><!-- Monster Types 部分的四张图片 -->
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monster Survivors - Survive the Endless Horde of Monsters</title>
     <meta name="description" content="Play Monster Survivors online - an intense survival game where you battle endless waves of monsters with evolving weapons and abilities.">
     <link rel="canonical" href="https://monstersurvivors.com">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7HNPKF872V"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7HNPKF872V');
+    </script>
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
@@ -68,10 +78,10 @@
 </head>
 
 <body class="min-h-screen">
+    <!-- 删除header中的logo图片 -->
     <header class="bg-white shadow-md">
         <div class="container mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
             <div class="flex items-center mb-4 md:mb-0">
-                <img src="/api/placeholder/80/80" alt="Monster Survivors Logo" class="w-12 h-12 mr-3">
                 <span class="text-2xl font-bold text-gray-800">MonsterSurvivors.com</span>
             </div>
             <nav>
@@ -211,26 +221,23 @@
             </div>
         </section>
 
+        <!-- 修改Monster Types部分，删除图片引用 -->
         <section class="mb-16">
             <h2 class="text-3xl font-bold mb-6 text-gray-900 border-b-2 border-blue-500 pb-2">Monster Types</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 <div class="bg-white p-4 rounded-lg shadow-md">
-                    <img src="/api/placeholder/120/120" alt="Slime Monster" class="w-16 h-16 mx-auto mb-3">
                     <h3 class="text-lg font-semibold text-center text-gray-800">Slimes</h3>
                     <p class="text-gray-700 text-center text-sm">Fast but weak monsters that attack in groups</p>
                 </div>
                 <div class="bg-white p-4 rounded-lg shadow-md">
-                    <img src="/api/placeholder/120/120" alt="Skeleton Monster" class="w-16 h-16 mx-auto mb-3">
                     <h3 class="text-lg font-semibold text-center text-gray-800">Skeletons</h3>
                     <p class="text-gray-700 text-center text-sm">Ranged attackers that fire projectiles</p>
                 </div>
                 <div class="bg-white p-4 rounded-lg shadow-md">
-                    <img src="/api/placeholder/120/120" alt="Golem Monster" class="w-16 h-16 mx-auto mb-3">
                     <h3 class="text-lg font-semibold text-center text-gray-800">Golems</h3>
                     <p class="text-gray-700 text-center text-sm">Slow but powerful tanks with high health</p>
                 </div>
                 <div class="bg-white p-4 rounded-lg shadow-md">
-                    <img src="/api/placeholder/120/120" alt="Boss Monster" class="w-16 h-16 mx-auto mb-3">
                     <h3 class="text-lg font-semibold text-center text-gray-800">Boss Monsters</h3>
                     <p class="text-gray-700 text-center text-sm">Special enemies that appear at time intervals</p>
                 </div>
